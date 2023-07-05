@@ -13,7 +13,7 @@ function Home() {
   const [getMovies, setGetMovies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://my-movies-back.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
           setGetMovies(data.movies)   
